@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily UI 001 : Sign-Up</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>Daily UI 001: Sign-Up</div>
+    <div> Randee Johnson </div>
+<div class="heading-container">
+    <h1> Soul Sistaz</h1>
+    <h2> Sign-Up </h2>
+</div>
+    <form class="form">
+        <div class="formtext name">
+        <p>Tell us your name:</p>
+        <input type="text" name="First Name" placeholder="First Name"/>
+        <input type="text" name="Last Name" placeholder="Last Name"/>
+    </div>
+    <div class="formtext email">
+        <p>What is the best email address to reach you at? </p>
+        <input type="email" name="email" placeholder="Email"/>
+    </div>
+    <div class="formtext birthday">
+        <p>What is your birthdate? </p>
+        <input type="date" name="birth date" placeholder="Date"/>
+    </div>
+    <div>
+        <input type="submit" value="Join Soul Sistaz"/>
+    </div>
+    </form>
+</body>
+<style>
+
+:root{
+    --gold: rgba(255, 204, 0, 0.728);
+    --brown:  rgb(60, 35, 5);
+    background:linear-gradient(45deg, #c1a982 ,#6c1829 );
+    background-repeat:no-repeat;
+    height: 100%;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.heading-container h1{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 180px;
+    text-align: center;
+    color: var(--brown);
+    text-shadow: 2px 3px var(--gold);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.heading-container h2{
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+}
+
+.formtext{
+    text-align: center;
+    color: var(--brown);
+}
+
+input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid var(--gold);
+    border-radius: 20%;
+    background-color:rgb(240, 221, 198);
+    color: var(--brown);
+}
+    
+input[type=submit] {
+            background-color: var(--brown);
+            border: var(--gold);
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+}
+
+</style>
+
+<!-- NOTES -->
+<!-- EXPERIENCE
+    5.31.21
+    Went pretty smoothly. Learned about creating color variables in css. I am proud of the speed at which I was able to make this. Probably nothing wild, but making use of Google definitely expedited the process. I am happy with the rate at which I was able to know what to use and what to look for.
+-->
+<!-- NEXT STEPS
+    5.31.21
+    mobile friendly!
+    Add a logo
+    Color scheme
+    font size
+    form questions
+    additional pages: about us, testimonials, (audio)books we are listenign to/reading, past sessions, question of the month
+    working form (API - storing data)
+ -->
+</html>
